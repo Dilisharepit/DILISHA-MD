@@ -14,7 +14,7 @@ const search = await yts(q)
 const data = search.videos[0];
 const url  = data.url
 
-let desc = ' 
+let desc =' 
 😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ song downloader*😈
 
 tittle: ${data.tittle}
@@ -60,7 +60,7 @@ const search = await ytv(q)
 const data = search.videos[0];
 const url  = data.url
 
-let desc = ' 
+let desc =' 
 😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ video downloader*😈
 
 tittle: ${data.tittle}
