@@ -14,8 +14,8 @@ const search = await yts(q)
 const data = search.videos[0];
 const url  = data.url
 
-let desc =
-'😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ song downloader*😈
+let desc = `
+😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ song downloader*😈
 
 tittle: ${data.tittle}
 despcription: ${data.description}
@@ -23,7 +23,8 @@ time: ${data.time}
 ago: ${data.ago}
 views: ${data.views}
 
-MADE BY 😈DILISHA_GIMSHAN😈'
+MADE BY 😈DILISHA_GIMSHAN😈
+`
 
 await conn.sendmessage(from,{image:{url: data. thumbnail},caption:desc,{quoted:mek});
 
@@ -59,8 +60,8 @@ const search = await ytv(q)
 const data = search.videos[0];
 const url  = data.url
 
-let desc = 
-'😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ video downloader*😈
+let desc = `
+😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ video downloader*😈
 
 tittle: ${data.tittle}
 despcription: ${data.description}
@@ -68,7 +69,8 @@ time: ${data.time}
 ago: ${data.ago}
 views: ${data.views}
 
-MADE BY 😈DILISHA_GIMSHAN😈'
+MADE BY 😈DILISHA_GIMSHAN😈
+`
 
 await conn.sendmessage(from,{image:{url: data. thumbnail},caption:desc,{quoted:mek});
 
