@@ -21,7 +21,7 @@ let desc = `
 
 tittle: ${data.title}
 description: ${data.description}
-time: ${data.time}
+time: ${data.timestamp}
 ago: ${data.ago}
 views: ${data.views}
 
