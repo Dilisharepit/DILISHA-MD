@@ -5,8 +5,8 @@ const yts = require('yt-search')
 
 cmd({
     pattern: "song",
-    desc: "Check bot online or no.",
-    category: "download song",
+    desc: "download song",
+    category: "download",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -49,10 +49,10 @@ reply(`${e}`)
 })
 
 //=========video-dl===========//
-
-attern: "vodeo",
-    desc: "Check bot online or no.",
-    category: "download video",
+cmd({
+    pattern: "video",
+    desc: "download video",
+    category: "download",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
