@@ -50,8 +50,7 @@ reply(`${e}`)
 
 //=========video-dl===========//
 
-cmd({
-    pattern: "video",
+attern: "vodeo",
     desc: "Check bot online or no.",
     category: "download video",
     filename: __filename
@@ -66,7 +65,7 @@ const url  = data.url
 let desc = `
 😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ video downloader*😈
 
-tittle: ${data.tittle}
+tittle: ${data.title}
 description: ${data.description}
 time: ${data.timestamp}
 ago: ${data.ago}
@@ -74,8 +73,7 @@ views: ${data.views}
 
 MADE BY 😈DILISHA_GIMSHAN😈
 `
-
-await conn.sendmMssage(from,{image:{url: data. thumbnail},caption:desc},{quoted:mek});
+await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
 
 //download video
 
@@ -83,13 +81,13 @@ let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
 
 // send video + document message
-await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4",caption:"MADE BY DILISHA💞"},{quoted:mek});
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4"},{quoted:mek})
+await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek});
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"MADE IN DILISHA💞"},{quoted:mek})
 
 
 
 
-
+ 
 }catch(e){
 console.log(e)
 reply(`${e}`)
