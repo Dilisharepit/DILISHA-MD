@@ -67,8 +67,8 @@ let desc = `
 😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ video downloader*😈
 
 tittle: ${data.tittle}
-despcription: ${data.description}
-time: ${data.time}
+description: ${data.description}
+time: ${data.timestamp}
 ago: ${data.ago}
 views: ${data.views}
 
@@ -83,7 +83,7 @@ let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
 
 // send video + document message
-await conn.sendmessage(from,{video: {url:downloadUrl},mimetype:"video/mp4",caption:"MADE BY DILISHA💞"},{quoted:mek})
+await conn.sendmessage(from,{video: {url:downloadUrl},mimetype:"video/mp4",caption:"MADE BY DILISHA💞"},{quoted:mek});
 await conn.sendmessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4"},{quoted:mek})
 
 
