@@ -20,7 +20,7 @@ let desc = `
 😈 *ᎠᏆᏞᏆՏᎻᎪ-ᎷᎠ song downloader*😈
 
 tittle: ${data.title}
-despcription: ${data.description}
+description: ${data.description}
 time: ${data.time}
 ago: ${data.ago}
 views: ${data.views}
